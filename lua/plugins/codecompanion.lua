@@ -1,12 +1,13 @@
 -- This configuration is experimental. Only enable it when in use.
-if true then
-  return {}
-end
+-- if true then
+--   return {}
+-- end
 
 return {
   "olimorris/codecompanion.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim",
+    "nvim-treesitter/nvim-treesitter",
   },
   opts = {
     strategies = {
@@ -25,7 +26,7 @@ return {
         anthropic = function()
           return require("codecompanion.adapters").extend("anthropic", {
             env = {
-              api_key = "CURRENT_API_KEY_CLAUDE",
+              api_key = "CLAUDE_API_KEY",
             },
           })
         end,
