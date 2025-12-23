@@ -1,3 +1,9 @@
+# Claude
+# Personal tool permissions, local path overrides, and sensitive settings.
+.claude/settings.local.json
+# Personal notes or reminders.
+CLAUDE.local.md
+
 tt.*
 .tests
 doc/tags
